@@ -1,0 +1,17 @@
+path: /content/drive/My Drive/Colab Notebooks/Final_Dataset # dataset root dir
+train: autosplit_train.txt # path to train images text file
+val: autosplit_val.txt # path to validation images text file
+test: autosplit_test.txt # path to test images text file
+  
+# Classes
+nc: 9  # number of classes
+names:
+  0: police force          
+  1: emergency medical services   
+  2: car           
+  3: motorcycle         
+  4: fire department   
+  5: bus   
+  6: rescue vehicle
+  7: truck
+  8: military vehicle
