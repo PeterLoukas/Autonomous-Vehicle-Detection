@@ -40,9 +40,8 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
     · Used the LabelImg tool for manual review and correction.
     
 **· Annotation Format**:
-    **· YOLO Format**: 
-        
-        cls_id x_center y_center width height (all normalized values).
+    
+    · YOLO Format: cls_id x_center y_center width height (all normalized values).
 
 **3. Dataset Composition**
 
