@@ -1,5 +1,4 @@
-# Autonomous-Vehicle-Detection
-Emergency Vehicle Detection with Deep Learning Techniques for Autonomous Vehicles 🚗🚒🚑
+# Emergency Vehicle Detection with Deep Learning Techniques for Autonomous Vehicles 🚗🚒🚑
 
 Welcome to the Emergency Vehicle Detection project! This repository outlines a comprehensive approach using Deep Learning to detect emergency vehicles (like police cars, ambulances, fire trucks) for applications in Autonomous Vehicles.
 
