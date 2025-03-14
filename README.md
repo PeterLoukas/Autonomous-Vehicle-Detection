@@ -170,13 +170,15 @@ To ensure that the model has sufficient data for training while maintaining reli
 Install required dependencies 
 '''
 
-pip install ultralytics wandb ray[tune] albumentations pytube cv2 supervision
+!pip install ultralytics wandb ray[tune] albumentations pytube cv2 supervision
+
 
 **2. Mount Google Drive (for Colab)**
 
 from google.colab import drive
 
 drive.mount('/content/drive')
+
 
 **3. Running Inference**
 
@@ -199,6 +201,7 @@ results = model.predict(
     device='cpu',
     save=True
 )
+
 
 **4. Inference on Videos**
 
