@@ -260,7 +260,7 @@ results = model.predict(
 │   ├──  07_Results_from_Inference_pytorch
 
 
-└── weights/
+├── weights/
 
 │   ├──  best.pt
 
