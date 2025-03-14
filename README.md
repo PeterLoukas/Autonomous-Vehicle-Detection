@@ -166,7 +166,9 @@ To ensure that the model has sufficient data for training while maintaining reli
 
 **1. Setup**
 
-# Install required dependencies
+''' 
+Install required dependencies 
+'''
 
 pip install ultralytics wandb ray[tune] albumentations pytube cv2 supervision
 
@@ -180,11 +182,15 @@ drive.mount('/content/drive')
 
 from ultralytics import YOLO
 
-# Load the fine-tuned model
+''' 
+Load the fine-tuned model
+'''
 
 model = YOLO('/content/drive/My Drive/Colab Notebooks/Final_Dataset/weights/best.pt')
 
-# Run inference on test images
+'''
+Run inference on test images
+'''
 
 results = model.predict(
     source='/content/drive/My Drive/Colab Notebooks/Final_Dataset/autosplit_test.txt',
@@ -196,7 +202,9 @@ results = model.predict(
 
 **4. Inference on Videos**
 
-# Run inference on a video file
+'''
+Run inference on a video file
+'''
 
 results = model.predict(
     source='/content/drive/My Drive/Colab Notebooks/videos/test_video.mp4',
@@ -208,21 +216,37 @@ results = model.predict(
 **🗂️ File Structure**
 
 ├── Final_Dataset/
+
 │   ├── images/
+
 │   ├── labels/
+
 │   ├── autosplit_train.txt
+
 │   ├── autosplit_val.txt
+
 │   ├── autosplit_test.txt
+
 │   ├── dataset.yaml
+
 │   └── weights/
+
 │       └── best.pt
+
 ├── notebooks/
+
 │   ├── Dataset_Creation.ipynb
+
 │   ├── Dataset_(Pre)processing.ipynb
+
 │   ├── Comparing_YOLOv8_Flavors.ipynb
+
 │   ├── Hyperparameter_Tuning.ipynb
+
 │   ├── Transfer_Learning.ipynb
+
 │   └── Inference_PyTorch.ipynb
+
 
 **✅ Conclusion and Learnings**
 
