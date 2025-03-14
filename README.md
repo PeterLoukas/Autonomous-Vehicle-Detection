@@ -24,6 +24,7 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
     Real-world dashcam videos sourced from YouTube.
 
 **· Extraction Process**:
+
     · Downloaded videos using yt_dlp.
     · Extracted every 10th frame to ensure data diversity while reducing redundancy.
     · Resulted in a collection of 13,953 unique images covering diverse conditions (urban, night, occlusions, blurring).
@@ -69,20 +70,24 @@ To ensure that the model has sufficient data for training while maintaining reli
 🔍 **Exploratory Data Analysis (EDA)**
 
 **· Tools Used**:
+
     · Ultralytics Explorer API for semantic analysis and SQL-like querying.
     · LanceDB for similarity search and embedding generation.
 
 **Key Insights**:
 
 **· Class Distribution**:
+
     · Regular vehicles (car, truck, bus) were more frequent compared to emergency vehicles.
     · Visualized with bar plots and statistical summaries.
     
 **· Imbalance Handling**:
+
     · Identified class imbalances using SQL queries.
     · Removed images with missing or incorrect labels.
     
 **· Similarity Analysis**:
+
     · Leveraged LanceDB for embedding-based similarity checks.
     · Removed near-duplicate images to ensure dataset uniqueness.
 
@@ -113,10 +118,12 @@ To ensure that the model has sufficient data for training while maintaining reli
 **3. Fine-Tuning & Transfer Learning**
 
 **· Approach**:
+
     · Applied transfer learning by freezing the backbone of the YOLO model.
     · Conducted 10 experiments to find the optimal model setup.
     
 **· Data Augmentation**:
+
     · Created a custom augmentation pipeline using Albumentations for:
     · Noise addition, motion blur, perspective distortion, brightness shifts, and more.
     
@@ -129,10 +136,12 @@ To ensure that the model has sufficient data for training while maintaining reli
     Unseen test set (10% split).
 
 **· Metrics Analyzed**:
+
     · Precision, Recall, F1-Score, and Loss curves.
     · Confusion matrices to visualize per-class accuracy.
     
 **· Key Results**:
+
     · Consistent and high accuracy in detecting emergency vehicles.
     · Validated against existing literature benchmarks, demonstrating competitive or superior performance.
 
@@ -145,6 +154,7 @@ To ensure that the model has sufficient data for training while maintaining reli
     Utilized Google Colab for all code execution.
 
 **· Inference**:
+
     · Performed using the final fine-tuned model (best.pt).
     · Supports inference on both images and videos with configurable thresholds.
 
@@ -213,14 +223,17 @@ results = model.predict(
 **✅ Conclusion and Learnings**
 
 **· Key Takeaways**:
+
     · Successfully developed an advanced YOLOv8-based emergency vehicle detection system.
     · Efficiently handled dataset imbalances and optimized model training through rigorous experimentation.
     
 **· Challenges Faced**:
+
     · Managing class imbalances and ensuring dataset diversity.
     · Fine-tuning hyperparameters while avoiding overfitting.
     
 **· Potential Future Improvements**:
+
     · Enhance real-time inference speed for deployment on edge devices.
     · Integrate temporal consistency for video-based detection.
     · Experiment with alternative object detection frameworks.
