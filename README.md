@@ -9,8 +9,11 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
 **· Problem Addressed**: Autonomous vehicles need to recognize and respond to emergency vehicles promptly. Traditional detection systems may struggle with real-world variations like occlusions, lighting, and environmental conditions.
 
 **· Solution Approach**:
+
     · Developed a custom dataset with diverse emergency and regular vehicle scenarios.
+    
     · Leveraged the YOLOv8 (You Only Look Once) deep learning model for efficient and accurate object detection.
+    
     · Fine-tuned the model using advanced techniques like hyperparameter tuning, transfer learning, and data augmentation to achieve optimal results.
 
 **📂 Dataset Creation**
