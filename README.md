@@ -170,7 +170,7 @@ To ensure that the model has sufficient data for training while maintaining reli
 Install required dependencies 
 '''
 
-!pip install ultralytics wandb ray[tune] albumentations pytube cv2 supervision
+!pip install ultralytics
 
 
 **2. Mount Google Drive (for Colab)**
@@ -182,38 +182,28 @@ drive.mount('/content/drive')
 
 **3. Running Inference**
 
+import os
 from ultralytics import YOLO
 
 ''' 
 Load the fine-tuned model
 '''
 
-model = YOLO('/content/drive/My Drive/Colab Notebooks/Final_Dataset/weights/best.pt')
+model = YOLO("/content/drive/My Drive/Colab Notebooks/Final_Dataset/weights/best.pt")
 
 '''
 Run inference on test images
 '''
 
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 results = model.predict(
     source='/content/drive/My Drive/Colab Notebooks/Final_Dataset/autosplit_test.txt',
     imgsz=1024,
     conf=0.43,
-    device='cpu',
-    save=True
-)
-
-
-**4. Inference on Videos**
-
-'''
-Run inference on a video file
-'''
-
-results = model.predict(
-    source='/content/drive/My Drive/Colab Notebooks/videos/test_video.mp4',
-    save=True,
-    save_txt=True,
-    conf=0.4
+    iou=0.4,
+    agnostic_nms=True,
+    device=DEVICE
 )
 
 **🗂️ File Structure**
