@@ -29,7 +29,7 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
 **· Automatic Annotation**:
     · Initial annotations were generated using YOLOv8's inference capability.
     
-**·Manual Refinement**:
+**· Manual Refinement**:
     · Used the LabelImg tool for manual review and correction.
     
 **· Annotation Format**:
