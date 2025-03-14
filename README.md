@@ -4,9 +4,11 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
 
 **📖 Project Overview**
 
-**· Objective**: Enhance autonomous vehicle safety by enabling real-time detection of emergency vehicles in diverse driving conditions.
+**· Objective**: 
+Enhance autonomous vehicle safety by enabling real-time detection of emergency vehicles in diverse driving conditions.
 
-**· Problem Addressed**: Autonomous vehicles need to recognize and respond to emergency vehicles promptly. Traditional detection systems may struggle with real-world variations like occlusions, lighting, and environmental conditions.
+**· Problem Addressed**: 
+    Autonomous vehicles need to recognize and respond to emergency vehicles promptly. Traditional detection systems may struggle with real-world variations like occlusions, lighting, and environmental conditions.
 
 **· Solution Approach**:
 
