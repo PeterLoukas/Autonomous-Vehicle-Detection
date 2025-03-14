@@ -207,7 +207,7 @@ results = model.predict(
 )
 
 
-**🗂️ File Structure**
+**🗂️ Repository Structure**
 
 ├── dataset/
 
