@@ -160,7 +160,7 @@ To ensure that the model has sufficient data for training while maintaining reli
 **· Inference**:
 
     · Performed using the final fine-tuned model (best.pt).
-    · Supports inference on the test set with configurable thresholds.
+    · Supports inference on both images and videos with configurable thresholds.
 
 **⚙️ Usage Instructions**
 
