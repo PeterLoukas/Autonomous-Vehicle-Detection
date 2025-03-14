@@ -62,9 +62,10 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
 **4. Dataset Splitting**
 
 **· Utilized the autosplit function from Ultralytics**:
-    **· Training Set**: 70% (9,802 images)
-    **· Validation Set**: 20% (2,823 images)
-    **· Test Set**: 10% (1,308 images)
+
+    · Training Set: 70% (9,802 images)
+    · Validation Set: 20% (2,823 images)
+    · Test Set: 10% (1,308 images)
 
 **· Why This Split?**
 
