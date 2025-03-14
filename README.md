@@ -211,9 +211,9 @@ results = model.predict(
 
 ├── dataset/
 
-│   ├── images/
+│   ├── images
 
-│   ├── labels/
+│   ├── labels
 
 │   ├── Dataset.yaml
 
@@ -240,7 +240,7 @@ results = model.predict(
 
 │   ├── 06_Transfer_Learning.ipynb
 
-│   └── 07_Inference_pytorch.ipynb
+│   ├── 07_Inference_pytorch.ipynb
 
 
 ├── results/
@@ -255,12 +255,14 @@ results = model.predict(
 
 │   ├── 05_Results_from_the_Hyperparameter_Tuning
 
-│   └── 06_Results_from_the_Transfer_Learning
+│   ├──  06_Results_from_the_Transfer_Learning
 
-│   └── 07_Results_from_Inference_pytorch
+│   ├──  07_Results_from_Inference_pytorch
+
 
 └── weights/
-       └── best.pt
+
+│   ├──  best.pt
 
 **✅ Conclusion and Learnings**
 
