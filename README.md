@@ -209,38 +209,58 @@ results = model.predict(
 
 **🗂️ File Structure**
 
-├── Final_Dataset/
+├── dataset/
 
 │   ├── images/
 
 │   ├── labels/
 
+│   ├── Dataset.yaml
+
+│   ├── autosplit_test.txt
+
 │   ├── autosplit_train.txt
 
 │   ├── autosplit_val.txt
 
-│   ├── autosplit_test.txt
 
-│   ├── dataset.yaml
 
-│   └── weights/
-
-│       └── best.pt
 
 ├── notebooks/
 
-│   ├── Dataset_Creation.ipynb
+│   ├── 01_Testing_Yolov8.ipynb
 
-│   ├── Dataset_(Pre)processing.ipynb
+│   ├── 02_Dataset_Creation.ipynb
 
-│   ├── Comparing_YOLOv8_Flavors.ipynb
+│   ├── 03_Dataset_(Pre)processing.ipynb
 
-│   ├── Hyperparameter_Tuning.ipynb
+│   ├── 04_Comparing YOLOv8-Flavors in W&B.ipynb
 
-│   ├── Transfer_Learning.ipynb
+│   ├── 05_Hyperparameter_Tuning with Raytune.ipynb
 
-│   └── Inference_PyTorch.ipynb
+│   ├── 06_Transfer_Learning.ipynb
 
+│   └── 07_Inference_pytorch.ipynb
+
+
+├── results/
+
+│   ├── 01_Results_of_Yolov8_Testing
+
+│   ├── 02_Annotate_images_with_Yolov8
+
+│   ├── 03_Augmentations_results
+
+│   ├── 04_Results_from_the_Comparison_of_YOLOv8-Flavors
+
+│   ├── 05_Results_from_the_Hyperparameter_Tuning
+
+│   └── 06_Results_from_the_Transfer_Learning
+
+│   └── 07_Results_from_Inference_pytorch
+
+└── weights/
+       └── best.pt
 
 **✅ Conclusion and Learnings**
 
