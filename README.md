@@ -3,6 +3,7 @@
 Welcome to the Emergency Vehicle Detection project! This repository outlines a comprehensive approach using Deep Learning to detect emergency vehicles (like police cars, ambulances, fire trucks) for applications in Autonomous Vehicles.
 
 **📖 Project Overview**
+
 **· Objective**: Enhance autonomous vehicle safety by enabling real-time detection of emergency vehicles in diverse driving conditions.
 **· Problem Addressed**: Autonomous vehicles need to recognize and respond to emergency vehicles promptly. Traditional detection systems may struggle with real-world variations like occlusions, lighting, and environmental conditions.
 **· Solution Approach**:
@@ -11,6 +12,7 @@ Welcome to the Emergency Vehicle Detection project! This repository outlines a c
     · Fine-tuned the model using advanced techniques like hyperparameter tuning, transfer learning, and data augmentation to achieve optimal results.
 
 **📂 Dataset Creation**
+
 **1. Sourcing and Frame Extraction**
 **· Data Source**: Real-world dashcam videos sourced from YouTube.
 **· Extraction Process**:
@@ -65,6 +67,7 @@ To ensure that the model has sufficient data for training while maintaining reli
     · Removed near-duplicate images to ensure dataset uniqueness.
 
 **🧠 Model Selection and Training**
+
 **1. Model Comparison (YOLOv8 Variants)**
 **· Compared five YOLOv8 variants**: Nano (n), Small (s), Medium (m), Large (l), Extra-Large (xl).
 **·Evaluation Metrics**: Precision, Recall, mAP (mean Average Precision).
@@ -87,6 +90,7 @@ To ensure that the model has sufficient data for training while maintaining reli
 **· Final Model**: The experiment EXP10 demonstrated the highest performance with minimal overfitting.
 
 **📊 Results and Evaluation**
+
 **· Evaluation Dataset**: Unseen test set (10% split).
 **· Metrics Analyzed**:
     · Precision, Recall, F1-Score, and Loss curves.
@@ -96,6 +100,7 @@ To ensure that the model has sufficient data for training while maintaining reli
     · Validated against existing literature benchmarks, demonstrating competitive or superior performance.
 
 **🚀 Deployment Approach**
+
 **· Storage**: All models, datasets, and results were stored in Google Drive.
 **· Execution**: Utilized Google Colab for all code execution.
 **· Inference**:
@@ -103,6 +108,7 @@ To ensure that the model has sufficient data for training while maintaining reli
     · Supports inference on both images and videos with configurable thresholds.
 
 **⚙️ Usage Instructions**
+
 **1. Setup**
 # Install required dependencies
 pip install ultralytics wandb ray[tune] albumentations pytube cv2 supervision
@@ -136,6 +142,7 @@ results = model.predict(
 )
 
 **🗂️ File Structure**
+
 ├── Final_Dataset/
 │   ├── images/
 │   ├── labels/
@@ -154,6 +161,7 @@ results = model.predict(
 │   └── Inference_PyTorch.ipynb
 
 **✅ Conclusion and Learnings**
+
 **· Key Takeaways**:
     · Successfully developed an advanced YOLOv8-based emergency vehicle detection system.
     · Efficiently handled dataset imbalances and optimized model training through rigorous experimentation.
@@ -166,9 +174,11 @@ results = model.predict(
     · Experiment with alternative object detection frameworks.
 
 **🤝 Contributions and Support**
+
 Feel free to contribute to this project by submitting pull requests or raising issues for improvements. For queries and discussions, please open an issue.
 
 **🏁 Acknowledgments**
+
 · Special thanks to the authors of the referenced academic articles for inspiration.
 · The Ultralytics team for their powerful YOLOv8 framework.
 · The developers of Ray Tune, W&B, and LanceDB for their robust tools that supported this research.
